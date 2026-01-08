@@ -1,11 +1,3 @@
-/*
- * SP01 - UART Bit Waveform Observation
- * Board: Arduino Uno
- * TX Pin: D8
- * Baud: 9600 bps
- * Data: 'a'
- */
-
 #define UART_TX 8
 #define UART_BAUD 9600
 #define BIT_US (1000000UL / UART_BAUD)
@@ -48,3 +40,4 @@ void loop() {
   uartSendChar('a');
   delay(400);  // 반복 간격
 }
+
